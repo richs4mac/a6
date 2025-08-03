@@ -1,5 +1,9 @@
 version: '1.0'
 services:
+  front-end:
+    image: ghcr.io/mcmastercce/bvd-103-mcmasterful-books/mcmasterful-books-docker:main
+    volumes:
+      - ./adapter:/source/adapter
   nginx:
     image: nginx:1-alpine
     ports:
