@@ -6,3 +6,4 @@ services:
       - 8080:80
     volumes:
       - ../..:/workspaces:cached
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
